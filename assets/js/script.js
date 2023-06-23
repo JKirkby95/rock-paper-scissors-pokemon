@@ -3,7 +3,7 @@ const homeScreen = document.getElementById('home-screen');
 const startButton = document.getElementById('start-button');
 const gameScreen = document.getElementById('game-screen');
 
-// Add event listener to the start button
+// Add event listeners
 startButton.addEventListener('click', startGame);
 
 // Function to start the game

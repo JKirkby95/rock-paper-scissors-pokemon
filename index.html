@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,52 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="home-screen">
         <h1>Welcome to PokéDuel!</h1>
         <p>
-            <h2>Rules:</h2>
-            PokéDuel is a game I created it's my own version of the classic Rock Paper Scissors game.
+        <h2>Rules:</h2>
+        PokéDuel is a game I created it's my own version of the classic Rock Paper Scissors game.
         </p>
-        
-        <button id="start-button">Start Game</button>
-      </div>
-    
-      <div id="game-screen" style="display: none;">
-        <!-- Game screen elements will go here -->
-      </div>
+
+        <button id="start-button">Start Game!</button>
+    </div>
+
+    <div id="game-screen" style="display: none;">
+        <h1>Welcome to PokéDuel!</h1>
+        <h2>Choose your Pokémon!</h2>
+        <div class="game-buttons">
+            <ul class="buttons-list">
+                <li>
+                    <button data-type="charmander" id="charmander-btn" class="game-btn" aria-label="Select charmander.">
+                        <img src="/assets/images/charmander.png" alt="charmander icon">
+                    </button>
+                </li>
+                <li>
+                    <button data-type="bulbasaur" id="bulbasaur-btn" class="game-btn" aria-label="Select bulbasaur.">
+                        <img src="/assets/images/bulbasaur.png" alt="bulbasaur icon">
+                    </button>
+                </li>
+                <li>
+                    <button data-type="squirtle" id="squirtle-btn" class="game-btn" aria-label="Select squirtle.">
+                        <img src="/assets/images/squirtle.png" alt="squirtle icon">
+                    </button>
+                </li>
+                <li>
+                    <button data-type="pikachu" id="pikachu-btn" class="game-btn" aria-label="Select pikachu.">
+                        <img src="/assets/images/pikachu.png" alt="pikachu icon">
+                    </button>
+                </li>
+                <li>
+                    <button data-type="pidgey" id="pidgey-btn" class="game-btn" aria-label="Select pidgey.">
+                        <img src="/assets/images/pidgey.png" alt="pidgey icon">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="/assets/js/script.js"></script>
 </body>
+
 </html>
