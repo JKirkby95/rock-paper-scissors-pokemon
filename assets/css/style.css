@@ -6,13 +6,17 @@ body {
     font-family: 'PKMN RBYGSC';
     src: url('/assets/fonts/PKMN RBYGSC.ttf') format('truetype');
   }
-  
+  /* Home screen styling */
 #home-screen {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+.rules-list li{
+    margin-top: 10px;
+    list-style: none;
 }
 #start-button,
 #start-button:after {
@@ -123,6 +127,9 @@ body {
         height: 86px;
         line-height: 88px;
     }
+}
+.buttons-list{
+    margin-top: 10% ;
 }
 .buttons-list li{
     display: inline-block;
