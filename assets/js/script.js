@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Get the necessary DOM elements
-    const startButton = document.getElementById('start-button');
-    const homeScreen = document.getElementById('home-screen');
-    const gameScreen = document.getElementById('game-screen');
-    const gameButtons = Array.from(document.getElementsByClassName("game-btn"));
-    const resultMessage = document.getElementById('result-message');
-    const trainerScore = document.getElementById('trainer-score');
-    const opponentScore = document.getElementById('opponent-score');
+    let startButton = document.getElementById('start-button');
+    let homeScreen = document.getElementById('home-screen');
+    let gameScreen = document.getElementById('game-screen');
+    let gameButtons = Array.from(document.getElementsByClassName("game-btn"));
+    let resultMessage = document.getElementById('result-message');
+    let trainerScore = document.getElementById('trainer-score');
+    let opponentScore = document.getElementById('opponent-score');
 
     let playerScore = 0;
     let computerScore = 0;
@@ -29,11 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to handle button click
     function handleButtonClick(event) {
-        const selectedPokemon = event.currentTarget.dataset.type;
-        const computerPokemon = getRandomPokemon(); // Get a random Pokémon for the computer
+        let selectedPokemon = event.currentTarget.dataset.type;
+        let computerPokemon = getRandomPokemon(); // Get a random Pokémon for the computer
 
         // Perform game logic to determine the winner
-        const result = determineWinner(selectedPokemon, computerPokemon);
+        let result = determineWinner(selectedPokemon, computerPokemon);
 
         // Increment scores and display the result to the user
         if (result === "Player wins!") {
@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to get a random Pokémon for the computer
     function getRandomPokemon() {
-        const pokemons = ['charmander', 'bulbasaur', 'squirtle', 'pikachu', 'pidgey'];
-        const randomIndex = Math.floor(Math.random() * pokemons.length);
+        let pokemons = ['charmander', 'bulbasaur', 'squirtle', 'pikachu', 'pidgey'];
+        let randomIndex = Math.floor(Math.random() * pokemons.length);
         return pokemons[randomIndex];
     }
 
