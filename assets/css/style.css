@@ -1,7 +1,9 @@
+/* general styling for the body of the page */
 body {
     text-align: center;
     font-family: 'PKMN RBYGSC', sans-serif;
 }
+/* custom imported font with a fall back of sans-serif */
 @font-face {
     font-family: 'PKMN RBYGSC';
     src: url('/assets/fonts/PKMN RBYGSC.ttf') format('truetype');
@@ -14,10 +16,12 @@ body {
     justify-content: center;
     height: 100vh;
 }
+/* rules list style */
 .rules-list li{
     margin-top: 10px;
     list-style: none;
 }
+/*  start game button imported and edited from getcssscan.com */
 #start-button,
 #start-button:after {
     width: 150px;
@@ -61,7 +65,6 @@ body {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
-
 @keyframes glitch {
     0% {
         clip-path: var(--slice-1);
@@ -118,7 +121,7 @@ body {
         transform: translate(0);
     }
 }
-
+/* responsive style for the button */
 @media (min-width: 768px) {
 
     #start-button,
@@ -128,6 +131,7 @@ body {
         line-height: 88px;
     }
 }
+/* style for the pokemon list */
 .buttons-list{
     margin-top: 10% ;
 }
