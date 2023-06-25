@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Pokéduel</title>
 </head>
 
 <body>
     <div id="home-screen">
+        <!-- title of the game -->
         <h1>Welcome to PokéDuel!</h1>
+        <!-- the rules for the game -->
         <p class="rules">
         <h2>Rules:</h2>
         PokéDuel is a game I created it's my own version of the classic Rock Paper Scissors game.
@@ -38,14 +40,18 @@
             </li>
         </ul>
         </p>
-
+        <!-- start button -->
         <button id="start-button">Start Game!</button>
     </div>
-
+    <!-- game screen that appears after start button is pressed -->
     <div id="game-screen" style="display: none;">
+        <!-- title of the game -->
         <h1>Welcome to PokéDuel!</h1>
+        <br>
         <h2>Choose your Pokémon!</h2>
+        <!-- the interactive game section -->
         <div class="game-buttons">
+            <!-- list of pokemon to choose from -->
             <ul class="buttons-list">
                 <li>
                     <button data-type="charmander" id="charmander-btn" class="game-btn" aria-label="Select charmander.">
@@ -73,15 +79,16 @@
                     </button>
                 </li>
             </ul>
+            <!-- code to show what the user and the computer selected and the result of that -->
             <div id="result-message"></div>
         </div>
+        <!-- area that keeps track of the score -->
         <div class="score-area">
             <h2 class="trainer-score-label">User: <span id="trainer-score">0</span></h2>
             <h2 class="opponent-score-label">Computer: <span id="opponent-score">0</span></h2>
         </div>
-        
     </div>
+    <!-- link to js file -->
     <script src="/assets/js/script.js"></script>
 </body>
-
 </html>
