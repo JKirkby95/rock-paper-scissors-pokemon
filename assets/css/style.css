@@ -23,7 +23,9 @@ body {
 }
 /*  start game button imported and edited from getcssscan.com */
 #start-button,
-#start-button:after {
+#start-button:after,
+#reset-button,
+#reset-button::after {
     width: 150px;
     height: 76px;
     line-height: 78px;
@@ -41,7 +43,8 @@ body {
     touch-action: manipulation;
 }
 
-#start-button:after {
+#start-button:after,
+#reset-button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -61,7 +64,8 @@ body {
     clip-path: var(--slice-0);
 }
 
-#start-button:hover:after {
+#start-button:hover:after,
+#reset-button:hover:after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
@@ -125,7 +129,9 @@ body {
 @media (min-width: 768px) {
 
     #start-button,
-    #start-button:after {
+    #start-button:after,
+    #reset-button,
+    #reset-button:after {
         width: 200px;
         height: 86px;
         line-height: 88px;
