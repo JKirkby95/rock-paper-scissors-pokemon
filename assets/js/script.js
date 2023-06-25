@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // get the necessary DOM elements
     let startButton = document.getElementById('start-button');
+    let resetButton = document.getElementById('reset-button');
     let homeScreen = document.getElementById('home-screen');
     let gameScreen = document.getElementById('game-screen');
     let gameButtons = Array.from(document.getElementsByClassName("game-btn"));
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let userScore = 0;
     let computerScore = 0;
     startButton.addEventListener('click', startGame);
+    resetButton.addEventListener('click', resetGame);
     // function to start the game
     function startGame() {
         // hide the home screen
@@ -21,6 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
             button.addEventListener('click', handleButtonClick);
         });
     }
+    // reset the game
+    function resetGame(){
+        // setting the scores to 0 to reset
+        userScore = 0;
+        computerScore = 0;
+        // updating score display
+        trainerScore.textContent = 0;
+        opponentScore.textContent = 0;
+        }
     // function to handle button click
     function handleButtonClick(event) {
         let selectedPokemon = event.currentTarget.dataset.type;
