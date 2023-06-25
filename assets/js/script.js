@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let resultMessage = document.getElementById('result-message');
     let trainerScore = document.getElementById('trainer-score');
     let opponentScore = document.getElementById('opponent-score');
-    let playerScore = 0;
+    let userScore = 0;
     let computerScore = 0;
     startButton.addEventListener('click', startGame);
     // function to start the game
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // determining the winner
         let result = determineWinner(selectedPokemon, computerPokemon);
         // increment scores 
-        if (result === "Player wins!") {
-            playerScore++;
+        if (result === "user wins!") {
+            userScore++;
         } else if (result === "Computer wins!") {
             computerScore++;
         }
@@ -43,24 +43,24 @@ document.addEventListener("DOMContentLoaded", function () {
         return pokemons[randomIndex];
     }
     // function to determine the winner
-    function determineWinner(playerPokemon, computerPokemon) {
-        if (playerPokemon === computerPokemon) {
+    function determineWinner(userPokemon, computerPokemon) {
+        if (userPokemon === computerPokemon) {
             return "It's a draw!";
         } else if (
-            (playerPokemon === 'charmander' && (computerPokemon === 'bulbasaur' || computerPokemon === 'pidgey')) ||
-            (playerPokemon === 'squirtle' && (computerPokemon === 'charmander' || computerPokemon === 'pikachu')) ||
-            (playerPokemon === 'bulbasaur' && (computerPokemon === 'squirtle' || computerPokemon === 'pikachu')) ||
-            (playerPokemon === 'pikachu' && (computerPokemon === 'charmander' || computerPokemon === 'pidgey')) ||
-            (playerPokemon === 'pidgey' && (computerPokemon === 'bulbasaur' || computerPokemon === 'squirtle'))
+            (userPokemon === 'charmander' && (computerPokemon === 'bulbasaur' || computerPokemon === 'pidgey')) ||
+            (userPokemon === 'squirtle' && (computerPokemon === 'charmander' || computerPokemon === 'pikachu')) ||
+            (userPokemon === 'bulbasaur' && (computerPokemon === 'squirtle' || computerPokemon === 'pikachu')) ||
+            (userPokemon === 'pikachu' && (computerPokemon === 'charmander' || computerPokemon === 'pidgey')) ||
+            (userPokemon === 'pidgey' && (computerPokemon === 'bulbasaur' || computerPokemon === 'squirtle'))
         ) {
-            return "Player wins!";
+            return "user wins!";
         } else {
             return "Computer wins!";
         }
     }
     // function to update the score 
     function updateScoreDisplay() {
-        trainerScore.textContent = playerScore;
+        trainerScore.textContent = userScore;
         opponentScore.textContent = computerScore;
     }
 });
