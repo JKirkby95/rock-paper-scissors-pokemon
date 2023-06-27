@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     // reset the game
-    function resetGame(){
+    function resetGame() {
         // setting the scores to 0 to reset
         userScore = 0;
         computerScore = 0;
         // updating score display
         trainerScore.textContent = 0;
         opponentScore.textContent = 0;
-        }
+    }
     // function to handle button click
     function handleButtonClick(event) {
         let selectedPokemon = event.currentTarget.dataset.type;
