@@ -2,13 +2,20 @@
 body {
     text-align: center;
     font-family: 'PKMN RBYGSC', sans-serif;
+    background-image: url("/assets/images/red_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
+
 /* custom imported font with a fall back of sans-serif */
 @font-face {
     font-family: 'PKMN RBYGSC';
     src: url('/assets/fonts/PKMN RBYGSC.ttf') format('truetype');
-  }
-  /* Home screen styling */
+}
+
+/* Home screen styling */
 #home-screen {
     display: flex;
     flex-direction: column;
@@ -16,11 +23,13 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
 /* rules list style */
-.rules-list li{
+.rules-list li {
     margin-top: 10px;
     list-style: none;
 }
+
 /*  start game button imported and edited from getcssscan.com */
 #start-button,
 #start-button:after,
@@ -44,6 +53,7 @@ body {
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+
 #start-button:after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
@@ -62,6 +72,7 @@ body {
     text-shadow: -3px -3px 0px #000, 3px 3px 0px #000;
     clip-path: var(--slice-0);
 }
+
 #reset-button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
@@ -80,7 +91,8 @@ body {
     text-shadow: -3px -3px 0px #000, 3px 3px 0px #000;
     clip-path: var(--slice-0);
 }
-.start-again-button::after{
+
+.start-again-button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -98,88 +110,107 @@ body {
     text-shadow: -3px -3px 0px #000, 3px 3px 0px #000;
     clip-path: var(--slice-0);
 }
+
 #start-button:hover:after,
 #reset-button:hover:after,
 .start-again-button::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
+
 @keyframes glitch {
     0% {
         clip-path: var(--slice-1);
         transform: translate(-20px, -10px);
     }
+
     10% {
         clip-path: var(--slice-3);
         transform: translate(10px, 10px);
     }
+
     20% {
         clip-path: var(--slice-1);
         transform: translate(-10px, 10px);
     }
+
     30% {
         clip-path: var(--slice-3);
         transform: translate(0px, 5px);
     }
+
     40% {
         clip-path: var(--slice-2);
         transform: translate(-5px, 0px);
     }
+
     50% {
         clip-path: var(--slice-3);
         transform: translate(5px, 0px);
     }
+
     60% {
         clip-path: var(--slice-4);
         transform: translate(5px, 10px);
     }
+
     70% {
         clip-path: var(--slice-2);
         transform: translate(-10px, 10px);
     }
+
     80% {
         clip-path: var(--slice-5);
         transform: translate(20px, -10px);
     }
+
     90% {
         clip-path: var(--slice-1);
         transform: translate(-10px, 0px);
     }
+
     100% {
         clip-path: var(--slice-1);
         transform: translate(0);
     }
 }
+
 /* responsive style for the button */
 @media (min-width: 768px) {
+
     #start-button,
     #start-button:after,
     #reset-button,
-    #reset-button:after
-    .start-again-button,
+    #reset-button:after .start-again-button,
     .start-again-button::after {
         width: 200px;
         height: 86px;
         line-height: 88px;
     }
 }
+
 /* style for the pokemon list */
-.buttons-list{
-    margin-top: 10% ;
+.buttons-list {
+    margin-top: 10%;
 }
-.buttons-list li{
+
+.buttons-list li {
     display: inline-block;
 }
+
 .buttons-list li img {
     width: 200px;
-    height:200px;
+    height: 200px;
 }
+
 /* winner screen css */
-#winner-screen, #loser-screen{
+#winner-screen,
+#loser-screen {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #winner-screen img,
 #loser-screen img {
     margin-top: 10%;
