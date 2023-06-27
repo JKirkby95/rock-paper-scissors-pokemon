@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         startGame();
         resetGame();
     }
-    
+
     // function to handle button click
     function handleButtonClick(event) {
         let selectedPokemon = event.currentTarget.dataset.type;
