@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let startButton = document.getElementById('start-button');
     let resetButton = document.getElementById('reset-button');
     let homeScreen = document.getElementById('home-screen');
+    let startAgainButton = document.getElementById('start-again-button')
     let gameScreen = document.getElementById('game-screen');
+    let winnerScreen = document.getElementById('winner-screen');
     let gameButtons = Array.from(document.getElementsByClassName("game-btn"));
     let resultMessage = document.getElementById('result-message');
     let trainerScore = document.getElementById('trainer-score');
@@ -12,12 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let computerScore = 0;
     startButton.addEventListener('click', startGame);
     resetButton.addEventListener('click', resetGame);
+    startAgainButton.addEventListener('click', startAgain);
     // function to start the game
     function startGame() {
         // hide the home screen
         homeScreen.style.display = 'none';
         // display the game screen
         gameScreen.style.display = 'block';
+        // hide the winner screen
+        winnerScreen.style.display = 'none';
         // add click event listeners to each game button
         gameButtons.forEach(button => {
             button.addEventListener('click', handleButtonClick);
@@ -31,7 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // updating score display
         trainerScore.textContent = 0;
         opponentScore.textContent = 0;
+        // clear the result message
+        resultMessage.textContent = " ";
     }
+    function startAgain() {
+        startGame();
+        resetGame();
+    }
+    
     // function to handle button click
     function handleButtonClick(event) {
         let selectedPokemon = event.currentTarget.dataset.type;
@@ -73,5 +85,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateScoreDisplay() {
         trainerScore.textContent = userScore;
         opponentScore.textContent = computerScore;
+
+        if (userScore === 3) {
+            winner();
+        }
+    }
+    // shows the user a gif saying winner
+    function winner() {
+        gameScreen.style.display = 'none';
+        winnerScreen.style.display = 'block';
     }
 });
