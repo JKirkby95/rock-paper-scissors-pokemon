@@ -3,18 +3,23 @@ document.addEventListener("DOMContentLoaded", function () {
     let startButton = document.getElementById('start-button');
     let resetButton = document.getElementById('reset-button');
     let homeScreen = document.getElementById('home-screen');
-    let startAgainButton = document.getElementById('start-again-button')
+    let startAgainButtons = document.getElementsByClassName('start-again-button');
     let gameScreen = document.getElementById('game-screen');
     let winnerScreen = document.getElementById('winner-screen');
+    let loserScreen = document.getElementById('loser-screen');
     let gameButtons = Array.from(document.getElementsByClassName("game-btn"));
     let resultMessage = document.getElementById('result-message');
     let trainerScore = document.getElementById('trainer-score');
     let opponentScore = document.getElementById('opponent-score');
     let userScore = 0;
     let computerScore = 0;
+    // add event listeners
     startButton.addEventListener('click', startGame);
     resetButton.addEventListener('click', resetGame);
-    startAgainButton.addEventListener('click', startAgain);
+    // need to loop through the start again buttons because I have multiple identicle buttons
+    for (let i = 0; i < startAgainButtons.length; i++) {
+        startAgainButtons[i].addEventListener('click', startAgain);
+      }
     // function to start the game
     function startGame() {
         // hide the home screen
@@ -23,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         gameScreen.style.display = 'block';
         // hide the winner screen
         winnerScreen.style.display = 'none';
+        // hide the loser screen
+        loserScreen.style.display = 'none';
         // add click event listeners to each game button
         gameButtons.forEach(button => {
             button.addEventListener('click', handleButtonClick);
@@ -39,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // clear the result message
         resultMessage.textContent = " ";
     }
+    // restart the game after result
     function startAgain() {
         startGame();
         resetGame();
     }
-
     // function to handle button click
     function handleButtonClick(event) {
         let selectedPokemon = event.currentTarget.dataset.type;
@@ -88,11 +95,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (userScore === 3) {
             winner();
+        } else if (computerScore === 3) {
+            loser();
         }
     }
     // shows the user a gif saying winner
     function winner() {
         gameScreen.style.display = 'none';
         winnerScreen.style.display = 'block';
+    }
+    function loser() {
+        gameScreen.style.display = 'none';
+        loserScreen.style.display = 'block';
     }
 });

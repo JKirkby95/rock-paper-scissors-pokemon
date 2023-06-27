@@ -26,8 +26,8 @@ body {
 #start-button:after,
 #reset-button,
 #reset-button::after,
-#start-again-button,
-#start-again-button::after {
+.start-again-button,
+.start-again-button::after {
     width: fit-content;
     height: 76px;
     line-height: 78px;
@@ -80,7 +80,7 @@ body {
     text-shadow: -3px -3px 0px #000, 3px 3px 0px #000;
     clip-path: var(--slice-0);
 }
-#start-again-button::after{
+.start-again-button::after{
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -100,7 +100,7 @@ body {
 }
 #start-button:hover:after,
 #reset-button:hover:after,
-#start-again-button::after {
+.start-again-button::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
@@ -156,8 +156,8 @@ body {
     #start-button:after,
     #reset-button,
     #reset-button:after
-    #start-again-button,
-    #start-again-button::after {
+    .start-again-button,
+    .start-again-button::after {
         width: 200px;
         height: 86px;
         line-height: 88px;
@@ -175,11 +175,12 @@ body {
     height:200px;
 }
 /* winner screen css */
-#winner-screen{
+#winner-screen, #loser-screen{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#winner-screen img{
+#winner-screen img,
+#loser-screen img {
     margin-top: 10%;
 }
