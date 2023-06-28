@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // need to loop through the start again buttons because I have multiple identicle buttons
     for (let i = 0; i < startAgainButtons.length; i++) {
         startAgainButtons[i].addEventListener('click', startAgain);
-      }
+    }
     // function to start the game
     function startGame() {
         // hide the home screen
