@@ -5,6 +5,9 @@ body {
     background-image: url("/assets/images/peakpx.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 /* custom imported font with a fall back of sans-serif */
 @font-face {
@@ -47,7 +50,6 @@ body {
     -webkit-user-select: none;
     touch-action: manipulation;
 }
-
 #start-button:after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
@@ -208,8 +210,10 @@ body {
 }
 #game-screen{
     height: 100%;
+    overflow-y: auto;
 }
 #winner-screen img,
 #loser-screen img {
     margin-top: 10%;
+    width: auto;
 }
