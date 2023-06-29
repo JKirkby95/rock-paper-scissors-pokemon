@@ -200,7 +200,7 @@ body {
 
 /* style for the pokemon list */
 .buttons-list {
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 .buttons-list li {
@@ -223,6 +223,9 @@ body {
 #game-screen{
     height: 100%;
     overflow-y: auto;
+}
+#result-message {
+    padding: 20px;
 }
 #winner-screen img,
 #loser-screen img {
