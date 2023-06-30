@@ -9,10 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
     let loserScreen = document.getElementById('loser-screen');
     let gameButtons = Array.from(document.getElementsByClassName("game-btn"));
     let resultMessage = document.getElementById('result-message');
+    // scores section
     let trainerScore = document.getElementById('trainer-score');
     let opponentScore = document.getElementById('opponent-score');
     let userScore = 0;
     let computerScore = 0;
+    // pokemon selected by the user
+    let selectedCharmander = document.getElementById('selected-charmander');
+    let selectedBulbasaur = document.getElementById('selected-bulbasaur');
+    let selectedSquirtle = document.getElementById('selected-squirtle');
+    let selectedPidgey = document.getElementById('selected-pidgey');
+    let selectedPikachu = document.getElementById('selected-pikachu');
+    // pokemon selected by the computer
+    let computerCharmander = document.getElementById('computer-charmander');
+    let computerBulbasaur = document.getElementById('computer-bulbasaur');
+    let computerSquirtle = document.getElementById('computer-squirtle');
+    let computerPidgey = document.getElementById('computer-pidgey');
+    let computerPikachu = document.getElementById('computer-pikachu');
+
     // add event listeners
     startButton.addEventListener('click', startGame);
     resetButton.addEventListener('click', resetGame);
@@ -65,6 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         updateScoreDisplay();
         resultMessage.textContent = `You selected ${selectedPokemon}! The computer has selected ${computerPokemon}!  ${result}`;
+        updateSelectedPokemons(selectedPokemon);
+        updateComputerPokemon(computerPokemon);
     }
     // function to get a random Pokémon for the computer
     function getRandomPokemon() {
@@ -103,9 +119,51 @@ document.addEventListener("DOMContentLoaded", function () {
     function winner() {
         gameScreen.style.display = 'none';
         winnerScreen.style.display = 'block';
+        console.log("testing winner")
     }
     function loser() {
         gameScreen.style.display = 'none';
         loserScreen.style.display = 'block';
+        console.log("testing loser")
+    }
+    function updateSelectedPokemons(userPokemon) {
+        selectedCharmander.style.display = 'none';
+        selectedBulbasaur.style.display = 'none';
+        selectedSquirtle.style.display = 'none';
+        selectedPidgey.style.display = 'none';
+        selectedPikachu.style.display = 'none';
+    
+        // show the selected Pokémon by the user
+        if (userPokemon === 'charmander') {
+            selectedCharmander.style.display = 'block';
+        } else if (userPokemon === 'bulbasaur') {
+            selectedBulbasaur.style.display = 'block';
+        } else if (userPokemon === 'squirtle') {
+            selectedSquirtle.style.display = 'block';
+        } else if (userPokemon === 'pidgey') {
+            selectedPidgey.style.display = 'block';
+        } else if (userPokemon === 'pikachu') {
+            selectedPikachu.style.display = 'block';
+        } 
+    }
+    function updateComputerPokemon (computerPokemon) {
+        computerCharmander.style.display = 'none';
+        computerBulbasaur.style.display = 'none';
+        computerSquirtle.style.display = 'none';
+        computerPidgey.style.display = 'none';
+        computerPikachu.style.display = 'none';
+
+        // show the computer selected pokemon
+        if (computerPokemon === 'charmander') {
+            computerCharmander.style.display = 'block';
+        } else if (computerPokemon === 'bulbasaur') {
+            computerBulbasaur.style.display = 'block';
+        } else if (computerPokemon === 'squirtle') {
+            computerSquirtle.style.display = 'block';
+        } else if (computerPokemon === 'pidgey') {
+            computerPidgey.style.display = 'block';
+        } else if (computerPokemon === 'pikachu') {
+            computerPikachu.style.display = 'block';
+        } 
     }
 });

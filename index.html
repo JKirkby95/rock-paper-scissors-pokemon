@@ -49,6 +49,41 @@
         <h1>Choose your Pokémon!</h1>
         <!-- code to show what the user and the computer selected and the result of that -->
         <div id="result-message"></div>
+        <!-- showing the icons selected by the user and the ccomputer -->
+        <div id="selected-pokemons">
+            <div class="selected-pokemon">
+                <img src="/assets/images/charmander.png" alt="Selected Pokémon" id="selected-charmander" style="display:none;">
+            </div>
+            <div class="selected-pokemon">
+                <img src="/assets/images/bulbasaur.png" alt="Selected Pokémon" id="selected-bulbasaur" style="display:none;">
+            </div>
+            <div class="selected-pokemon">
+                <img src="/assets/images/squirtle.png" alt="Selected Pokémon" id="selected-squirtle" style="display:none;">
+            </div>
+            <div class="selected-pokemon">
+                <img src="/assets/images/pidgey.png" alt="Selected Pokémon" id="selected-pidgey" style="display:none;">
+            </div>
+            <div class="selected-pokemon">
+                <img src="/assets/images/pikachu.png" alt="Selected Pokémon" id="selected-pikachu" style="display:none;">
+            </div>
+        </div>
+        <div id="vs-text">vs</div>
+        <div id="computer-pokemons">
+            <div class="computer-pokemon">
+                <img src="/assets/images/charmander.png" alt="computer Pokémon" id="computer-charmander" style="display:none;">
+            </div>
+            <div class="computer-pokemon">
+                <img src="/assets/images/bulbasaur.png" alt="computer Pokémon" id="computer-bulbasaur" style="display:none;">
+            </div>
+            <div class="computer-pokemon">
+                <img src="/assets/images/squirtle.png" alt="computer Pokémon" id="computer-squirtle" style="display:none;">
+            </div>
+            <div class="computer-pokemon">
+                <img src="/assets/images/pidgey.png" alt="computer Pokémon" id="computer-pidgey" style="display:none;">
+            </div>
+            <div class="computer-pokemon">
+                <img src="/assets/images/pikachu.png" alt="computer Pokémon" id="computer-pikachu" style="display:none;">
+            </div>
         <!-- the interactive game section -->
         <div class="game-buttons">
             <!-- list of pokemon to choose from -->
@@ -87,6 +122,7 @@
             <h2 class="opponent-score-label">Computer: <span id="opponent-score">0</span></h2>
         </div>
         <button id="reset-button">Reset Game!</button>
+    </div>
     </div>
     <div id="winner-screen" style="display: none;">
         <img src="assets/images/winning.gif" alt="a gif celebrating the users victory">
