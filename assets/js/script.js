@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let loserScreen = document.getElementById('loser-screen');
     let gameButtons = Array.from(document.getElementsByClassName("game-btn"));
     let resultMessage = document.getElementById('result-message');
+    let selectedList = document.getElementById('selected-list');
     // scores section
     let trainerScore = document.getElementById('trainer-score');
     let opponentScore = document.getElementById('opponent-score');
@@ -59,6 +60,10 @@ document.addEventListener("DOMContentLoaded", function () {
         opponentScore.textContent = 0;
         // clear the result message
         resultMessage.textContent = " ";
+        // clear text box for result
+        resultMessage.style.display = "none";
+        // clear the pokemon vs icons
+        selectedList.style.display = "none";
     }
     // restart the game after result
     function startAgain() {
@@ -78,7 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
             computerScore++;
         }
         updateScoreDisplay();
-        resultMessage.textContent = `You selected ${selectedPokemon}! The computer has selected ${computerPokemon}!  ${result}`;
+        resultMessage.innerHTML = `You selected <span>${selectedPokemon}!</span><br>The computer has selected <span>${computerPokemon}!</span><br>${result}`;
+        resultMessage.style.display = "block";
+        selectedList.style.display = "block";
         updateSelectedPokemons(selectedPokemon);
         updateComputerPokemon(computerPokemon);
     }
@@ -113,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
             winner();
         } else if (computerScore === 3) {
             loser();
-        }
+        } 
     }
     // shows the user a gif saying winner
     function winner() {
