@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
             winner();
         } else if (computerScore === 3) {
             loser();
-        } 
+        }
     }
     // shows the user a gif saying winner
     function winner() {
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
         selectedSquirtle.style.display = 'none';
         selectedPidgey.style.display = 'none';
         selectedPikachu.style.display = 'none';
-    
+
         // show the selected Pokémon by the user
         if (userPokemon === 'charmander') {
             selectedCharmander.style.display = 'block';
@@ -153,9 +153,9 @@ document.addEventListener("DOMContentLoaded", function () {
             selectedPidgey.style.display = 'block';
         } else if (userPokemon === 'pikachu') {
             selectedPikachu.style.display = 'block';
-        } 
+        }
     }
-    function updateComputerPokemon (computerPokemon) {
+    function updateComputerPokemon(computerPokemon) {
         computerCharmander.style.display = 'none';
         computerBulbasaur.style.display = 'none';
         computerSquirtle.style.display = 'none';
@@ -173,6 +173,6 @@ document.addEventListener("DOMContentLoaded", function () {
             computerPidgey.style.display = 'block';
         } else if (computerPokemon === 'pikachu') {
             computerPikachu.style.display = 'block';
-        } 
+        }
     }
 });
