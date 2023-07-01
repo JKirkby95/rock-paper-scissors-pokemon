@@ -303,7 +303,19 @@ body {
     padding: 10px;
     margin-top: 1%;
 }
-
+.end-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+    border: 5px inset black;
+    background-color: rgba(220, 215, 201, 0.8);
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 #winner-screen img,
 #loser-screen img {
     margin-top: 10%;

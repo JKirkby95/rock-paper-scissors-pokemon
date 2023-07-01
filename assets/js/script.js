@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         winnerScreen.style.display = 'none';
         // hide the loser screen
         loserScreen.style.display = 'none';
+        // hide vs text when starting game
+        selectedList.style.display = "none";
         // add click event listeners to each game button
         gameButtons.forEach(button => {
             button.addEventListener('click', handleButtonClick);
