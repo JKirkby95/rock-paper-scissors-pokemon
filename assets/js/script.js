@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // get the necessary DOM elements
     let startButton = document.getElementById('start-button');
     let resetButton = document.getElementById('reset-button');
+    let openFeedbackButton = document.getElementById('open-feedback');
+    let closeFeedbackButton = document.getElementById('close-feedback');
     let homeScreen = document.getElementById('home-screen');
     let startAgainButtons = document.getElementsByClassName('start-again-button');
     let gameScreen = document.getElementById('game-screen');
@@ -11,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let resultMessage = document.getElementById('result-message');
     let selectedList = document.getElementById('selected-list');
     let mainMenu = document.getElementsByClassName('menu-button');
+    let feedbackForm = document.getElementById('feedback');
     // scores section
     let trainerScore = document.getElementById('trainer-score');
     let opponentScore = document.getElementById('opponent-score');
@@ -32,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // add event listeners
     startButton.addEventListener('click', startGame);
     resetButton.addEventListener('click', resetGame);
+    openFeedbackButton.addEventListener('click', openForm);
+    closeFeedbackButton.addEventListener('click', closeForm);
     // need to loop through the start again buttons because I have multiple identicle buttons
     for (let i = 0; i < startAgainButtons.length; i++) {
         startAgainButtons[i].addEventListener('click', startAgain);
@@ -80,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function menu() {
         // use refresh page to go to home screen
         location.reload();
+        console.log('testing');
     }
     // function to handle button click
     function handleButtonClick(event) {
@@ -137,12 +143,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function winner() {
         gameScreen.style.display = 'none';
         winnerScreen.style.display = 'block';
-        console.log("testing winner")
+        console.log("testing winner");
     }
     function loser() {
         gameScreen.style.display = 'none';
         loserScreen.style.display = 'block';
-        console.log("testing loser")
+        console.log("testing loser");
     }
     function updateSelectedPokemons(userPokemon) {
         selectedCharmander.style.display = 'none';
@@ -183,5 +189,13 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (computerPokemon === 'pikachu') {
             computerPikachu.style.display = 'block';
         }
+    }
+    // open the feedback form
+    function openForm(){
+        feedbackForm.style.display = 'block';
+        console.group('testing popup');
+    }
+    function closeForm(){
+        location.reload();
     }
 });

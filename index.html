@@ -54,16 +54,20 @@
                 <button class="menu-button">Main Menu</button>
             </li>
             <li>
-                <button class="menu-button" id="open-feedback">Feedback</button>
+                <button id="open-feedback">Feedback</button>
             </li>
         </ul>
+
         <!--Pop-up form-->
-        <div class="feedback" id="feedback-form">
+        <div id="feedback" style="display: none;">
             <form class="form-container" action="https://formdump.codeinstitute.net" method="POST">
                 <h2>Give us your feedback!</h2>
 
                 <label for="name">Name</label>
                 <input type="text" id="name" name="full-name" required>
+
+                <label for="Age">Age</label>
+                <input type="number" id="age" name="age" min="1" max="100" required>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
@@ -72,7 +76,7 @@
                 <textarea id="comment" name="comment" rows="3" required></textarea>
 
                 <button class="btn" type="submit">Send Feedback</button>
-                <button class="btn close-popup-btn" id="close-feedback-btn" type="button">Close</button>
+                <button class="btn close-popup-btn" id="close-feedback" type="button">Close</button>
             </form>
         </div>
     </div>
@@ -132,7 +136,7 @@
                         <img src="/assets/images/pikachu.png" alt="computer Pokémon" id="computer-pikachu"
                             style="display:none;">
                     </div>
-                    </div>
+                </div>
             </li>
         </ul>
         <!-- the interactive game section -->
