@@ -45,9 +45,15 @@
             </ul>
         </div>
         <!-- start button -->
-        <button id="start-button">Start Game!</button>
-        <!-- main menu button -->
-        <button class="menu-button">Main Menu</button>
+        <ul class="main-buttons">
+            <li>
+                <button id="start-button">Start Game!</button>
+            </li>
+            <!-- main menu button -->
+            <li>
+                <button class="menu-button">Main Menu</button>
+            </li>
+        </ul>
     </div>
     <!-- game screen that appears after start button is pressed -->
     <div id="game-screen" style="display: none;">
@@ -105,6 +111,7 @@
                         <img src="/assets/images/pikachu.png" alt="computer Pokémon" id="computer-pikachu"
                             style="display:none;">
                     </div>
+                    </div>
             </li>
         </ul>
         <!-- the interactive game section -->
@@ -149,7 +156,6 @@
         <!-- main menu -->
         <button class="menu-button">Main Menu</button>
     </div>
-    </div>
     <div id="winner-screen" style="display: none;">
         <!-- gif for winner -->
         <img src="assets/images/winning.gif" alt="a gif celebrating the users victory" class="gif">
@@ -164,7 +170,7 @@
         <img src="assets/images/loser.gif" alt="a gif for when the computer wins" class="gif">
         <!-- message for loser -->
         <p class="end-message">You lost.. <br> Click start again if you want to redeem yourself!</p>
-         <!-- start again and menu buttons -->
+        <!-- start again and menu buttons -->
         <button class="start-again-button">Start Again!</button>
         <button class="menu-button">Main Menu</button>
     </div>
