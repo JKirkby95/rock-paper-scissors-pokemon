@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let gameButtons = Array.from(document.getElementsByClassName("game-btn"));
     let resultMessage = document.getElementById('result-message');
     let selectedList = document.getElementById('selected-list');
+    let mainMenu = document.getElementsByClassName('menu-button');
     // scores section
     let trainerScore = document.getElementById('trainer-score');
     let opponentScore = document.getElementById('opponent-score');
@@ -34,6 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // need to loop through the start again buttons because I have multiple identicle buttons
     for (let i = 0; i < startAgainButtons.length; i++) {
         startAgainButtons[i].addEventListener('click', startAgain);
+    }
+    // lopp for main menu buttons
+    for (let i = 0; i < mainMenu.length; i++) {
+        mainMenu[i].addEventListener('click', menu);
     }
     // function to start the game
     function startGame() {
@@ -71,6 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function startAgain() {
         startGame();
         resetGame();
+    }
+    function menu() {
+        // use refresh page to go to home screen
+        location.reload();
     }
     // function to handle button click
     function handleButtonClick(event) {

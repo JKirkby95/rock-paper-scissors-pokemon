@@ -46,6 +46,8 @@
         </div>
         <!-- start button -->
         <button id="start-button">Start Game!</button>
+        <!-- main menu button -->
+        <button class="menu-button">Main Menu</button>
     </div>
     <!-- game screen that appears after start button is pressed -->
     <div id="game-screen" style="display: none;">
@@ -142,18 +144,29 @@
             <br>
             <h2 class="opponent-score-label">Computer: <span id="opponent-score">0</span></h2>
         </div>
+        <!-- reset scores button -->
         <button id="reset-button">Reset Game!</button>
+        <!-- main menu -->
+        <button class="menu-button">Main Menu</button>
     </div>
     </div>
     <div id="winner-screen" style="display: none;">
+        <!-- gif for winner -->
         <img src="assets/images/winning.gif" alt="a gif celebrating the users victory" class="gif">
+        <!-- winning message -->
         <p class="end-message">Congratulations you won! <br> Click start again to play another round.</p>
+        <!-- start again and menu buttons -->
         <button class="start-again-button">Start Again!</button>
+        <button class="menu-button">Main Menu</button>
     </div>
     <div id="loser-screen" style="display: none;">
+        <!-- gif for loser -->
         <img src="assets/images/loser.gif" alt="a gif for when the computer wins" class="gif">
+        <!-- message for loser -->
         <p class="end-message">You lost.. <br> Click start again if you want to redeem yourself!</p>
+         <!-- start again and menu buttons -->
         <button class="start-again-button">Start Again!</button>
+        <button class="menu-button">Main Menu</button>
     </div>
     <!-- link to js file -->
     <script src="/assets/js/script.js"></script>
