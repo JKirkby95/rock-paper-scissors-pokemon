@@ -139,12 +139,13 @@ document.addEventListener("DOMContentLoaded", function () {
             loser();
         }
     }
-    // shows the user a gif saying winner
+    // close loser screen
     function winner() {
         gameScreen.style.display = 'none';
         winnerScreen.style.display = 'block';
         console.log("testing winner");
     }
+    // open up loser screen
     function loser() {
         gameScreen.style.display = 'none';
         loserScreen.style.display = 'block';
@@ -191,11 +192,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     // open the feedback form
-    function openForm(){
+    function openForm() {
         feedbackForm.style.display = 'block';
         console.group('testing popup');
     }
-    function closeForm(){
+    // close the feeback form
+    function closeForm() {
         location.reload();
     }
 });

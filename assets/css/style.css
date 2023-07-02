@@ -42,6 +42,7 @@ body {
     padding: 5px;
 }
 
+/* buttons styling */
 .menu-button,
 #start-button,
 #reset-button,
@@ -51,15 +52,18 @@ body {
     font-family: 'PKMN RBYGSC';
     cursor: pointer;
 }
-.main-buttons{
+
+.main-buttons {
     margin-right: 2%;
 }
+
 .main-buttons li {
     display: inline-block;
     padding: 10px;
     margin-bottom: 50px;
     cursor: pointer;
 }
+
 /* feedback form */
 #feedback {
     width: 400px;
@@ -73,38 +77,44 @@ body {
     background-color: rgba(220, 215, 201, 0.8);
     font-family: 'PKMN RBYGSC';
 }
+
 .form-container {
     padding: 25px;
     color: #000;
     background-color: rgba(220, 215, 201, 0.8);
     border-radius: 10px;
-  }
-  .form-container input,
-.form-container textarea {
-  display: block;
-  padding: 15px;
-  margin: 5px auto 15px;
-  color: #000;
-  border: 2px inset #ffffff;
-  background: #fff;
-  opacity: 0.8;
 }
+
+.form-container input,
+.form-container textarea {
+    display: block;
+    padding: 15px;
+    margin: 5px auto 15px;
+    color: #000;
+    border: 2px inset #ffffff;
+    background: #fff;
+    opacity: 0.8;
+}
+
 .form-container input:focus {
     border-color: rgba(220, 215, 201, 0.8);
-  }
-  .form-container button {
+}
+
+.form-container button {
     border: 5px inset black;
     background-color: rgba(220, 215, 201, 0.8);
     font-family: 'PKMN RBYGSC';
     margin-top: 30px;
     cursor: pointer;
-  }
-  #open-feedback {
+}
+
+#open-feedback {
     border: 5px inset black;
     background-color: rgba(220, 215, 201, 0.8);
     font-family: 'PKMN RBYGSC';
     cursor: pointer;
 }
+
 /* footer  */
 footer {
     width: 100%;
@@ -216,7 +226,21 @@ footer {
     margin-top: 1%;
 }
 
-/* winner screen css */
+.score-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+    border: 5px inset black;
+    background-color: rgba(220, 215, 201, 0.8);
+    padding: 10px;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+}
+
+/* winner and loser screen css */
 #winner-screen,
 #loser-screen {
     display: flex;
@@ -232,20 +256,6 @@ footer {
 
 #result-message {
     padding: 20px;
-}
-
-.score-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: fit-content;
-    margin: 0 auto;
-    border: 5px inset black;
-    background-color: rgba(220, 215, 201, 0.8);
-    padding: 10px;
-    margin-top: 1%;
-    margin-bottom: 2.5%;
 }
 
 .end-message {
@@ -273,6 +283,7 @@ footer {
     width: auto;
 }
 
+/* responsive styling */
 @media (max-width: 900px) {
     .buttons-list li img {
         width: 100px;
@@ -321,13 +332,14 @@ footer {
         width: 300px;
         height: 300px;
     }
+
     .main-buttons li {
         width: 20%;
         display: inline;
     }
+
     #feedback {
         width: 300px;
         top: 150px;
     }
 }
-
