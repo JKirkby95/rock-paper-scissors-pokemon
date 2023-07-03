@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function menu() {
         // use refresh page to go to home screen
         location.reload();
-        console.log('testing');
     }
     // function to handle button click
     function handleButtonClick(event) {
@@ -143,13 +142,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function winner() {
         gameScreen.style.display = 'none';
         winnerScreen.style.display = 'block';
-        console.log("testing winner");
     }
     // open up loser screen
     function loser() {
         gameScreen.style.display = 'none';
         loserScreen.style.display = 'block';
-        console.log("testing loser");
     }
     function updateSelectedPokemons(userPokemon) {
         selectedCharmander.style.display = 'none';
@@ -194,7 +191,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // open the feedback form
     function openForm() {
         feedbackForm.style.display = 'block';
-        console.group('testing popup');
     }
     // close the feeback form
     function closeForm() {
