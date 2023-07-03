@@ -14,7 +14,7 @@ body {
 /* custom imported font with a fall back of sans-serif */
 @font-face {
     font-family: 'PKMN RBYGSC';
-    src: url('assets/fonts/PKMN RBYGSC.ttf') format('truetype');
+    src: url('../fonts/PKMN RBYGSC.ttf') format('truetype');
 }
 
 /* Home screen styling */
