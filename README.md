@@ -41,40 +41,44 @@ View the deployed website [here](https://jkirkby95.github.io/rock-paper-scissors
 
 ### Project Goals
 
-- 
+- The purpose of the game is obvious to the user the minute you open the home page.
 
-- 
+- Easy to read understand and navigate the site.
 
--
+- Responsive design to make the game accessible on different devices.
 
-- 
-- 
+- A feedback form is included to allow users to submit suggestions to improve the site or fix bugs.
+
+- Contains minimal colors to keep the design simple and allow brighter colors to stand out.
 
 ### User Stories
 
-- 
+- As a player, I want the game to have simple rules I can understand quickly.
 
-- 
+- As a player, I want the game to be fun and engaging.
 
-- 
+- As a player, I want the game to be easy to navigate.
 
-- 
+- As a player, I want the game controls to be easy to understand.
 
-- 
+- As a player, I want the game give me feedback for my selections.
 
-- 
+- As a player, I want the game be accessible on different devices.
 
 ### Color Scheme
 
 ![website color scheme](assets/images/color_scheme_pokeduel.png)
 
+The colors I used for this site were picked carefully, the color rgba(220, 215, 201) for the text boxes was insprired by the text boxes from the old games.(see below)
+The red #ff0000 is the same as in the original pokeball. Black and white were also a big part of any game back then so I decided to keep the colors as close to the games as I could.
 
-
-![masters jacket](./assets/images/masters.png)
+![pokemon red text box](assets/images/text_box_pokeduel.png)
 
 ### Typography
 
+I imported a custom font from [dafont.com](https://www.dafont.com/pkmn-rbygsc.font), this font plays a huge part in how the game looks and feels. Pokemons font is iconic and avid fans will spot it from a mile away. I wasn't sure how to import a custom font at first so i did set a fall back option of sans-serif incase it doesn't load for the user.
 
+![pokemon font](assets/images/text_box_pokeduel.png)
 
 ### Wireframes
 
@@ -82,9 +86,9 @@ For my wireframes I used [Balsamiq](https://balsamiq.com/), my wireframes didn't
 
 Page | Wireframe
 --- | --- 
-Index | ![Index ]()
-Game Screen | ![Game Screen]()
-Winner / Loser | ![Winner / Loser]()
+Home | ![Home](assets/images/home_wireframe_pokeduel.png)
+Game Screen | ![Game Screen](assets/images/game_wireframe_pokeduel.png)
+Winner / Loser | ![Winner / Loser](assets/images/winner_wireframe_pokeduel.png)
 
 [Back to top ⇧](#Pokéduel)
 
