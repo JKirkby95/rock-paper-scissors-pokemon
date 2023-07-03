@@ -1,10 +1,10 @@
 # Pokéduel
 
-![am i responsive photo]('assets/images/amiresponsive1.png')
+![am i responsive photo](assets/images/amiresponsive1.png)
 
 
 
-View the deployed website [here.]("https://jkirkby95.github.io/rock-paper-scissors-pokemon/")
+View the deployed website [here](https://jkirkby95.github.io/rock-paper-scissors-pokemon/).
 
 ## Table of Contents
 
@@ -66,7 +66,7 @@ View the deployed website [here.]("https://jkirkby95.github.io/rock-paper-scisso
 
 ### Color Scheme
 
-![website color scheme]()
+![website color scheme](assets/images/color_scheme_pokeduel.png)
 
 
 
