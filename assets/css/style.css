@@ -64,6 +64,14 @@ body {
     cursor: pointer;
 }
 
+.menu-button,
+#start-button,
+#reset-button,
+.start-again-button,
+#open-feedback {
+    padding: 15px;
+}
+
 /* feedback form */
 #feedback {
     width: 400px;
@@ -333,13 +341,32 @@ footer {
         height: 300px;
     }
 
-    .main-buttons li {
-        width: 20%;
-        display: inline;
-    }
-
     #feedback {
         width: 300px;
         top: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .rules-list li {
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    .menu-button,
+    #start-button,
+    #reset-button,
+    .start-again-button,
+    #open-feedback {
+        padding: 5px;
+    }
+    body {
+        font-size: 75%;
+    }
+    .main-buttons li {
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 25px;
+        cursor: pointer;
     }
 }
