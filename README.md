@@ -78,7 +78,7 @@ The red #ff0000 is the same as in the original pokeball. Black and white were al
 
 I imported a custom font from [dafont.com](https://www.dafont.com/pkmn-rbygsc.font), this font plays a huge part in how the game looks and feels. Pokemons font is iconic and avid fans will spot it from a mile away. I wasn't sure how to import a custom font at first so i did set a fall back option of sans-serif incase it doesn't load for the user.
 
-![pokemon font](assets/images/text_box_pokeduel.png)
+![pokemon font](assets/images/font_pokeduel.png)
 
 ### Wireframes
 
