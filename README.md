@@ -2,7 +2,7 @@
 
 ![am i responsive photo](assets/images/amiresponsive1.png)
 
-
+Pokéduel is my take on the game Roack Paper Scissors Lizard Spock made famous by the Big Bang Theory. My thinking behind it was Pokemon are set up like Rock Paper Scissors at the beginning. Fire, Water and Grass types act like the original game. I added Pikachu and Pidgey to make up the 5 and they are part of the original Pokedex. I used Pokemon to put a new spin on the game and because it was a huge part of my childhood.
 
 View the deployed website [here](https://jkirkby95.github.io/rock-paper-scissors-pokemon/).
 
