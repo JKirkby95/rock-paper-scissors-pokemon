@@ -1,10 +1,10 @@
 # Pokéduel
 
-![am i responsive photo]('')
+![am i responsive photo]('assets/images/amiresponsive1.png')
 
 
 
-View the deployed website [here.]()
+View the deployed website [here.]("https://jkirkby95.github.io/rock-paper-scissors-pokemon/")
 
 ## Table of Contents
 
