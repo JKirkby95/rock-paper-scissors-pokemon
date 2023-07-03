@@ -69,13 +69,14 @@ body {
 #reset-button,
 .start-again-button,
 #open-feedback {
-    padding: 15px;
+    padding: 10px;
 }
 
 /* feedback form */
 #feedback {
-    width: 400px;
-    top: 200px;
+    width: 40%;
+    height: 70%;
+    top: 125px;
     left: 0;
     right: 0;
     margin: auto;
@@ -96,12 +97,13 @@ body {
 .form-container input,
 .form-container textarea {
     display: block;
-    padding: 15px;
+    padding: 25px;
     margin: 5px auto 15px;
     color: #000;
     border: 2px inset #ffffff;
     background: #fff;
     opacity: 0.8;
+    max-width: 100%;
 }
 
 .form-container input:focus {
@@ -142,7 +144,7 @@ footer {
 }
 
 #social-networks i {
-    font-size: 250%;
+    font-size: 200%;
     padding: 2%;
     color: #000;
 }
@@ -292,14 +294,19 @@ footer {
 }
 
 /* responsive styling */
-@media (max-width: 900px) {
+@media screen and (max-width: 1000px){
+    #feedback {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 900px) {
     .buttons-list li img {
         width: 100px;
         height: 100px;
     }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .buttons-list li img {
         width: 90px;
         height: 90px;
@@ -316,7 +323,7 @@ footer {
     }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .buttons-list li img {
         width: 80px;
         height: 80px;
@@ -345,9 +352,17 @@ footer {
         width: 300px;
         top: 150px;
     }
+    .score-area {
+        padding: 0;
+        margin-bottom: 1%;
+    }
 }
-
-@media (max-width: 400px) {
+@media screen and (max-width: 525px){
+    body {
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 400px) {
     .rules-list li {
         margin-top: 5px;
         padding: 0;
@@ -360,15 +375,18 @@ footer {
     #open-feedback {
         padding: 5px;
     }
+
     body {
         font-size: 75%;
     }
+
     .main-buttons li {
         display: inline-block;
         padding: 5px;
         margin-bottom: 25px;
         cursor: pointer;
     }
+
     .buttons-list li img {
         width: 70px;
         height: 70px;
@@ -382,5 +400,53 @@ footer {
     .computer-pokemon img {
         width: 70px;
         height: 70px;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    #feedback {
+        top: 50px;
+    }
+
+    .rules-list li {
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    .form-container input,
+    .form-container textarea {
+        padding: 15px;
+    }
+
+    .form-container button {
+        margin-top: 15x;
+    }
+}
+
+@media screen and (max-height: 825px) {
+
+    .form-container input,
+    .form-container textarea {
+        padding: 10px;
+    }
+
+    .form-container button {
+        margin-top: 10x;
+    }
+
+    .main-buttons li {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    #social-networks i {
+        font-size: 170%;
+    }
+}
+@media screen and (max-height: 775px) {
+    #social-networks i {
+        font-size: 125%;
+    }
+    body {
+        font-size: 90%;
     }
 }
