@@ -504,3 +504,8 @@ footer {
         height: 60px;
      }
 }
+@media screen and (max-height: 500px) {
+    body{
+        font-size: 60%;
+    }
+}
