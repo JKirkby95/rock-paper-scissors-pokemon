@@ -98,43 +98,111 @@ Winner / Loser | ![Winner / Loser](assets/images/winner_wireframe_pokeduel.png)
 
 - Responsive design accross all device sizes.
 
-- Used similar colors and design accross all pages to keep everything clean and to present information clearly.
+- Used similar colors and design accross all sections.
 
 **Footer**
-![footer]()
+
+![footer](assets/images/footer_pokeduel.png)
 
 - The footer is also identical accross all pages of the website.
 
-- 
+- The footer contains links to social media platforms.
 
-- 
+- All links in the footer open in a new window.
+
+- The icons have a hover effect applied to them with a suitable color for each one.(see below)
+
+![facebook hover effect](assets/images/hover_pokeduel.png)
+
+![youtube hover effect](assets/images/hover2_pokeduel.png)
 
 ### Welcome Page
 
 - Background Image
 
-![Background Image]()
+![Background Image](assets/images/peakpx.jpg)
 
+- The background image is consistant accross every page.
 
-- Rules section
+- It contains the character Pikachu and the colors of the Pokeball both of which are iconic in the Pokemon world.
 
-![Rules section]()
+**Rules section**
 
-- 
+![Rules section](assets/images/rules_pokeduel.png)
 
-- 
+- The rules section is the main part of the home page.
 
-- 
+- The goal was to make the rules easy to understand even if the user doesn't know Pokemon.
+
+- The text box is inspired by the ones in the original games as I showed in the [color scheme](#color-scheme) section.
+
+**Feedback**
+
+![Feedback form](assets/images/feedback_pokeduel.png)
+
+- The feedback form I designed is a pop up form.
+
+- Each section is required to be filled out.
+
+- Each section needs a specific type of data to work name and comment needs text, age needs a number 1-100 and email needs a valid email.
+
+- The send feeback button submits the form and you can close the form with the other button.
 
 ### Game Screen
 
 **Message**
 
-![]()
+![game screen message](assets/images/message_pokeduel.png)
 
-- 
+- When you start the game the first thing you see will be the prompt to choose your Pokemon and a list of your options.
 
-- 
+- I designed these to be in a circle almost as if they're inside the Pokeball.
+
+- I changed the cursor to be a pointer on the Pokemon to help the user know they are interactive.
+
+**Vs section**
+
+![vs section](assets/images/vs_pokeduel.png)
+
+- I've called this section the 'Vs' section as it displays the inputs for both the user and the computer.
+
+- Again i've used the text box and fontfrom before to display the choices and show the winner.
+
+- In the example here both the user and the computer selected the same Pokemon so the result is a draw.
+
+**Scores**
+
+![Scores section](assets/images/scores_pokeduel.png)
+
+- The scores section is just a text box to show the current score of the game which is first to 3.
+
+**Buttons on game screen**
+
+![game screen buttons](assets/images/buttons-pokeduel.png)
+
+- There are two buttons on the game screen.
+
+- The reset button clears the game and resets the score (incase you don't want to lose :D)
+
+- The main menu button takes you back to the home page/ main menu.
+ 
+ ### Winner and loser screens
+
+ ![Winner Screen](assets/images/winner_pokeduel.png)
+
+ **Winner Screen**
+
+ - The winner screen contains a cheerful gif of the character Pikachu again keeping with theme.
+
+ - Also it contains a motivational message for the user.
+
+ - It also contains buttons to once again go back to the main menu or this time to start the game again.
+
+**Loser Screen**
+
+![loser screen](assets/images/loser_pokeduel.png)
+
+- The loser screen layout is identical to the winner screen except for a sad gif and a different message for the user.
 
 [Back to top ⇧](#Pokéduel)
 
