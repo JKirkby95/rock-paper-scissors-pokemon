@@ -2,7 +2,7 @@
 
 ![am i responsive photo](assets/images/amiresponsive1.png)
 
-Pokéduel is my take on the game Roack Paper Scissors Lizard Spock made famous by the Big Bang Theory. My thinking behind it was Pokemon are set up like Rock Paper Scissors at the beginning. Fire, Water and Grass types act like the original game. I added Pikachu and Pidgey to make up the 5 and they are part of the original Pokedex. I used Pokemon to put a new spin on the game and because it was a huge part of my childhood.
+Pokéduel is my take on the game Rock Paper Scissors Lizard Spock made famous by the Big Bang Theory. My thinking behind it was Pokemon are set up like Rock Paper Scissors at the beginning. Fire, Water and Grass types act like the original game. I added Pikachu and Pidgey to make up the 5 and they are part of the original Pokedex. I used Pokemon to put a new spin on the game and because it was a huge part of my childhood.
 
 View the deployed website [here](https://jkirkby95.github.io/rock-paper-scissors-pokemon/).
 
@@ -69,7 +69,7 @@ View the deployed website [here](https://jkirkby95.github.io/rock-paper-scissors
 
 ![website color scheme](assets/images/color_scheme_pokeduel.png)
 
-The colors I used for this site were picked carefully, the color rgba(220, 215, 201) for the text boxes was insprired by the text boxes from the old games.(see below)
+The colors I used for this site were picked carefully, the color rgba(220, 215, 201) for the text boxes was inspired by the text boxes from the old games.(see below)
 The red #ff0000 is the same as in the original pokeball. Black and white were also a big part of any game back then so I decided to keep the colors as close to the games as I could.
 
 ![pokemon red text box](assets/images/text_box_pokeduel.png)
@@ -96,9 +96,9 @@ Winner / Loser | ![Winner / Loser](assets/images/winner_wireframe_pokeduel.png)
 
 ### General
 
-- Responsive design accross all device sizes.
+- Responsive design across all device sizes.
 
-- Used similar colors and design accross all sections.
+- Used similar colors and design across all sections.
 
 **Favicon**
 
@@ -112,7 +112,7 @@ Winner / Loser | ![Winner / Loser](assets/images/winner_wireframe_pokeduel.png)
 
 ![footer](assets/images/footer_pokeduel.png)
 
-- The footer is also identical accross all pages of the website.
+- The footer is also identical across all pages of the website.
 
 - The footer contains links to social media platforms.
 
@@ -130,7 +130,7 @@ Winner / Loser | ![Winner / Loser](assets/images/winner_wireframe_pokeduel.png)
 
 ![Background Image](assets/images/peakpx.jpg)
 
-- The background image is consistant accross every page.
+- The background image is consistant across every page.
 
 - It contains the character Pikachu and the colors of the Pokeball both of which are iconic in the Pokemon world.
 
@@ -280,7 +280,7 @@ W3C CSS Validator was used to validate the CSS code.
 
 * As a player, I want the game to be fun and engaging.
 
-  - Personally I think this is a great version of the game adding the Pokemon to it makes it's fun for all ages.
+  - Personally I think this is a great version of the game adding the Pokemon to it makes it fun for all ages.
 
   - Also the gifs at the end make sure the game is still lighthearted and fun.
 
