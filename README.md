@@ -100,6 +100,14 @@ Winner / Loser | ![Winner / Loser](assets/images/winner_wireframe_pokeduel.png)
 
 - Used similar colors and design accross all sections.
 
+**Favicon**
+
+![favicon](assets/images/favicon_pokeduel.png)
+
+ - This was the first time I had used a favicon for a page and I think it adds a lot to the page even though it's a tiny detail.
+
+ - [Favicon.cc](https://www.favicon.cc/) was use for this.
+
 **Footer**
 
 ![footer](assets/images/footer_pokeduel.png)
@@ -218,17 +226,13 @@ Winner / Loser | ![Winner / Loser](assets/images/winner_wireframe_pokeduel.png)
 
 ### Frameworks, Libraries and Programs used
 
-- [Google fonts](https://fonts.google.com/)
+- [dafont.com](https://www.dafont.com/pkmn-rbygsc.font)
 
-Google fonts was used to import the Raleway , Mulish and Dancing Script fonts.
+Dafont was used to import my custom Pokemon themed font.
 
 - [Font Awesome](https://fontawesome.com/)
 
 Font Awesome was used to import useful icons for my page for a better visual experience.
-
-- [Pixelied](https://pixelied.com/)
-
-Used to change images from jpg to webp. To reduce the file size.
 
 - [Codeanywhere](https://app.codeanywhere.com/)
 
@@ -258,50 +262,78 @@ Am I responsive was used to make a mockup image for this README file and to chec
 
 W3C CSS Validator was used to validate the CSS code.
 
-- [CSS Scan](https://getcssscan.com/)
-
- CSS scan was used to get buttons for the welcome section, to add a bit more style.
-
 [Back to top ⇧](#Pokéduel)
 
 ## Testing
 
 ### Testing User Stories
 
-- 
+* As a player, I want the game to have simple rules I can understand quickly.
+ 
+  - The rules section is in the middle of the page, and I made them as simple as possible for a game like this.
+
+  - Clearly show the game is first to 3 points.
+
+  - Also show that if the user and the computer select the same Pokemon it's a draw.
+
+  - Instead of displaying all the possible matchups I just showed what two Pokemon each one beats hence they will lose to the other two.
+
+* As a player, I want the game to be fun and engaging.
+
+  - Personally I think this is a great version of the game adding the Pokemon to it makes it's fun for all ages.
+
+  - Also the gifs at the end make sure the game is still lighthearted and fun.
+
+* As a player, I want the game to be easy to navigate.
+
+  - On each screen there are minimal nav buttons so it's easy to work your way through all sections and not get lost.
+
+* As a player, I want the game controls to be easy to understand.
+
+  - I tried to make the game screen as simple as I could by showing the icons it makes it easy to choose an option.
+
+* As a player, I want the game give me feedback for my selections.
+
+  - To do this I added the vs section it shows the icons selected. User on the left and computer on the right.
+
+  - Also I added the text box to tell the user which Pokemon was selected and the result of the round.
+
+* As a player, I want the game be accessible on different devices.
+
+  - Responsive design across all device sizes.
+
+
 ### Code Validation
 
-- When running my code through the I did find a few errors.
+* HTML validation 
 
-W3C Markup Validator found an error concerning my Iframe I used, it had inline styling included so all I had to do was move the same styling to the css.style sheet.
+  - [W3C Markup Validator](https://validator.w3.org/) was used to validate my HTML.
 
-W3C Markup Validator also found an error where I had misspelled "class" as "classs" in one occasion.
+  - Only error I found at testing was I had an uppercase letter in the for value for a form element when the id had the same name but all lower case.
 
-- Thankfully I found no errors in the CSS validator.
+  - All errors corrected and no warnings showed after that.
+
+* CSS validation 
+
+  - [W3C CSS validator](https://jigsaw.w3.org/) was used to validate my CSS.
+
+  - No errors were found in the process.
+
+* JavaScript validation
+
+  - [Js hint](https://jshint.com/) was used to validate my JavaScript no errors were found see below.
+
+  ![js hint result](assets/images/js_hint__pokeduel.png)
 
 ### Accessibility
 
 - Used Lighthouse in Chrome DevTools to confirm that the colors and fonts being used in throughout the website are easy to read and accessible.
 
-**Home Page**
-
-
-
-**Book Now Page**
-
-
-
-**Booking Succeddful Page**
-
-
-
-**Gallery Page**
-
-
+![lighthouse](assets/images/lighthouse_pokeduel.png)
 
 ### Tools testing 
 
-- Chrome DevTools was used during the development process to test, explore and modify HTML elements and CSS styles used in the project.
+- Chrome DevTools was used during the development process to test, explore and modify HTML elements ,CSS styles and the JavsScript used in the project.
 
 - Chrome DevTools was also used to test responsiveness in different screen sizes during the development process.
 
@@ -311,39 +343,51 @@ W3C Markup Validator also found an error where I had misspelled "class" as "clas
 
 **Browser Compatibility**
 
-No issues with the site on the following browsers.
-
-- Google Chrome
-
-- Brave
-
-- Microsoft Edge.
+Browser | Outcome | Pass/Fail  
+--- | --- | ---
+Google Chrome | No appearance, responsiveness or functionality issues.| Pass
+Safari | No appearance, responsiveness or functionality issues. | Pass
+Brave | No appearance, responsiveness or functionality issues. | Pass
+Microsoft Edge | No appearance, responsiveness or functionality issues. | Pass
 
 **Device compatibility**
 
-No issues with the site on the foolowing devices.
-
-- HP Pavillion 14" display
-
-- Custom Home PC with 28" display (Also tested on same screen in portrait mode)
-
-- MacBook Pro 15"
-
-- MSI Katana GF66 11UE
-
-- Iphone 14 Pro
-
-- Nothing Phone (1)
-
-- One Plus 8T
+Device | Outcome | Pass/Fail
+--- | --- | ---
+HP Pavillion 14" display | No appearance, responsiveness or functionality issues. | Pass
+Custom Home PC with 28" display  | No appearance, responsiveness or functionality issues. | Pass
+MSI Katana GF66 11UE | No appearance, responsiveness or functionality issues. | Pass
+Iphone 14 Pro | No appearance, responsiveness or functionality issues. | Pass
+Nothing Phone (1) | No appearance, responsiveness or functionality issues. | Pass
+One Plus 8T| No appearance, responsiveness or functionality issues. | Pass
 
 **Common Elements Testing**
 
--
+- General
+
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Nav buttons |  Links are working as expected. | Pass
+    Start game function | Working as expected. | Pass
+    Social Links | Open the specific website on a new tab. | Pass
+    Feedback form | Form pops up and submits info as expected. | Pass
+    Pokemon Selector | Working as expected. | Pass
+    Scores section | Working as expected. | Pass
+    Vs section | Working as expected. | Pass
+    Reset button | Working as expected. | Pass
+    Main menu button | Working as expected. | Pass
+    Winner screen | Working as expected. | Pass
+    Loser screen | Working as expected. | Pass
 
 **Bugs**
 
+* No bugs are left in the this game to my knowledge but I did encounter plenty during the building of this game.
 
+  - ![file path bug](assets/images/file-path-error.png) <br> I wasn't using the correct file path for certain elements of the game when I first deployed it, these included my background image , the font and my JavaScript file resulting in the image above.
+
+  - I also had a bug where the winner and loser screens stopped appearing after the game was completed, the issue was actually in my HTML document I had added to it but I had forgotten to close a div. 
+
+  - Both of these issues were sovlved with the help of the Tutors from Code Institute.
 
 [Back to top ⇧](#Pokéduel)
 
@@ -351,16 +395,32 @@ No issues with the site on the foolowing devices.
 
 Page |  Finshed Product
 --- | --- 
-Index | ![Home page complete]()
-Book Now | ![Book now complete]()
-Booking Successful | ![ booking successful complete]()
-Gallery | ![Gallery complete]()
+Home | ![Home page](assets/images/home_pokeduel.png)
+Feedback | ![Feedback form pop up](assets/images/feedback_pokeduel.png)
+Game Screen | ![ Game screen](assets/images/game_screen_pokeduel.png)
+Winner Screen | ![winner screen](assets/images/winner_pokeduel.png)
+Loser Screen | ![loser screen](assets/images/loser_pokeduel.png)
 
 [Back to top ⇧](#Pokéduel)
 
 ## Deployment
 
-- This website was deployed using [Codeanywhere](https://app.codeanywhere.com/), and then committed and pushed to GitHub using the Codeanywhere terminal. more here!!!!!!!!
+* This website was developed using [Codeanywhere](https://app.codeanywhere.com/), which was then committed and pushed to GitHub using the terminal.
+
+### GitHub Pages
+
+* Here are the steps to deploy this website to GitHub Pages from its GitHub repository:
+
+    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+
+    2. At the top of the Repository, locate the Settings button on the menu.
+
+    3. Scroll down the Settings page until you locate the Pages section.
+
+    4. Under Source, click the dropdown called None and select Master Branch.
+
+    5. The page will refresh automatically and generate a link to your website.
+
 
 [Back to top ⇧](#Pokéduel)
 
@@ -372,7 +432,7 @@ Gallery | ![Gallery complete]()
 
 ### Media
 
-- All media used was either a screenshot of my own pages or downloaded from [Pixabay](https://pixabay.com/).
+- All media used was either a screenshot of my own pages or downloaded from [Pixabay](https://pixabay.com/) the icons for the Pokemon were from a custom icon pack I found which you can see [here](https://www.iconfinder.com/iconsets/151-1).
 
 ### Code
 
